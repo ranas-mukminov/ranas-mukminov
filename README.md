@@ -14,10 +14,25 @@ I don't just "fix servers". I architect **Zero-Trust Infrastructure** for FinTec
 ---
 
 ## 🛠️ Tech Stack
-* **Defense:** WireGuard, Cloudflare Tunnels, Trivy
-* **Orchestration:** Kubernetes (K3s), Helm
-* **Code:** Python (Boto3, Pydantic), Terraform
-* **CI/CD:** GitHub Actions (True GitOps)
+## 🛠️ Security Architecture Stack
+
+```mermaid
+graph TD
+    User([👤 Client / Traffic]) -->|HTTPS/443| CF[☁️ Cloudflare Edge]
+    
+    subgraph "Zero Trust Perimeter"
+        CF -->|Tunnel| WG[🔐 WireGuard Gateway]
+        WG -->|GitOps| K3s[☸️ K3s Cluster]
+    end
+    
+    subgraph "Automated Defense"
+        K3s -->|Scans| IAM[🐍 Cloud-IAM-Optimizer]
+        K3s -->|Monitor| Grafana[📊 Grafana / Kuma]
+    end
+    
+    style CF fill:#f96,stroke:#333,stroke-width:2px
+    style K3s fill:#326ce5,stroke:#333,stroke-width:2px,color:#fff
+    style IAM fill:#ffd343,stroke:#333,stroke-width:2px
 
 ---
 
