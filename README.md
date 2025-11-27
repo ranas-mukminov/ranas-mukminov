@@ -13,7 +13,6 @@ I don't just "fix servers". I architect **Zero-Trust Infrastructure** for FinTec
 
 ---
 
-## 🛠️ Tech Stack
 ## 🛠️ Security Architecture Stack
 
 ```mermaid
@@ -33,7 +32,6 @@ graph TD
     style CF fill:#f96,stroke:#333,stroke-width:2px
     style K3s fill:#326ce5,stroke:#333,stroke-width:2px,color:#fff
     style IAM fill:#ffd343,stroke:#333,stroke-width:2px
-
 ---
 
 ### 📬 Need an Audit?
