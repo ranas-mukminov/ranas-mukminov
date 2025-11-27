@@ -35,9 +35,9 @@ graph TD
 
 | Product | Status | Description |
 | :--- | :--- | :--- |
-| **[Cloud-IAM-Optimizer](https://github.com/ranas-mukminov/Cloud-IAM-Optimizer)** | 🟢 **Stable** | **Identity Security.** Automated audit tool for AWS IAM. Finds dormant admins, MFA gaps, and old keys in \<5s. |
-| **[K3s-GitOps-Core](https://www.google.com/search?q=https://github.com/ranas-mukminov/ranas-docs)** | 🟡 **Beta** | **Infrastructure.** My personal documentation & manifest stack for deploying "Invisible Servers". |
-
+| **[Cloud-IAM-Optimizer](https://github.com/ranas-mukminov/Cloud-IAM-Optimizer)** | 🟢 **Stable** | **Identity Security.** Automated audit tool for AWS IAM. Finds dormant admins & MFA gaps. |
+| **[Kube-Simple-Audit](https://github.com/ranas-mukminov/Kube-Simple-Audit)** | 🟢 **New** | **K8s Security.** Lightweight Bash script to find privileged pods & root containers in 5 seconds. |
+| **[Secure-K3s-Template](https://github.com/ranas-mukminov/Secure-K3s-GitOps-Template)** | 🟡 **Beta** | **Infrastructure.** Production-ready K3s cluster template with GitOps & Cloudflare Tunnel. |
 -----
 
 ## 💻 Tech Stack & Tools
