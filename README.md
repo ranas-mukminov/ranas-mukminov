@@ -27,3 +27,24 @@ graph TD
     style CF fill:#f96,stroke:#333,stroke-width:2px
     style K3s fill:#326ce5,stroke:#333,stroke-width:2px,color:#fff
     style IAM fill:#ffd343,stroke:#333,stroke-width:2px
+🚀 Core Products (Open Source)
+
+Product	Status	Description
+Cloud-IAM-Optimizer	🟢 Stable	Identity Security. Automated audit tool for AWS IAM. Finds dormant admins, MFA gaps, and old keys in <5s.
+K3s-GitOps-Core	🟡 Beta	Infrastructure. My personal documentation & manifest stack for deploying "Invisible Servers".
+
+💻 Tech Stack & Tools
+
+    Defense: WireGuard, Cloudflare Tunnels, Trivy, Falco
+
+    Orchestration: Kubernetes (K3s), Helm, Docker
+
+    Code: Python (Boto3, Pydantic), Terraform, Ansible
+
+    CI/CD: GitHub Actions (True GitOps workflows)
+
+📬 Need an Audit?
+
+If you want to secure your infrastructure "by design" and move from manual ops to automated defense:
+
+👉 Book a 15-min Architecture Review
