@@ -1,56 +1,170 @@
-# 🛡️ Ranas Security Stack
-### Automated. Invisible. Secure by Design.
+<div align="center">
 
-I don't just "fix servers". I architect **Zero-Trust Infrastructure** for FinTech and High-Load projects using Kubernetes and GitOps.
-My goal is to build systems that secure themselves without slowing down developers.
+# Run_as_daemon
+### Security Architect · DevSecOps · FinTech Zero-Trust
+
+**I design infrastructure that secures itself — without slowing your delivery.**  
+K3s · GitOps · Zero-Trust · Cilium · Vault · WireGuard
+
+<br/>
+
+[![Website](https://img.shields.io/badge/run--as--daemon.dev-0A0A0A?style=for-the-badge&logo=googlechrome&logoColor=00E5A8)](https://run-as-daemon.dev)
+[![HQ](https://img.shields.io/badge/run--as--daemon.pro-111827?style=for-the-badge&logo=vercel&logoColor=white)](https://run-as-daemon.pro)
+[![FTOPS](https://img.shields.io/badge/ftops.space-1E3A5F?style=for-the-badge&logo=wireguard&logoColor=88171A)](https://ftops.space)
+[![152Guard](https://img.shields.io/badge/152guard.space-B96F4C?style=for-the-badge&logo=shield&logoColor=white)](https://152guard.space)
+
+[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/en_run_as_daemon_dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ranas-mukminov/)
+[![X](https://img.shields.io/badge/X-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/mukminov_ranas)
+[![RU](https://img.shields.io/badge/RU_site-run--as--daemon.ru-red?style=flat-square)](https://run-as-daemon.ru)
+
+</div>
 
 ---
 
-## 🛠️ Security Architecture
+<div align="center">
 
-This is the standard **Ranas Security Stack** topology I implement:
+### Stack
+
+![K3s](https://img.shields.io/badge/K3s-FFC61C?style=flat-square&logo=kubernetes&logoColor=black)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![Cilium](https://img.shields.io/badge/Cilium-F8C519?style=flat-square&logo=cilium&logoColor=black)
+![Vault](https://img.shields.io/badge/Vault-000000?style=flat-square&logo=vault&logoColor=yellow)
+![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat-square&logo=wireguard&logoColor=white)
+![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![GitOps](https://img.shields.io/badge/GitOps-3D7EED?style=flat-square&logo=git&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white)
+
+<img src="https://skillicons.dev/icons?i=kubernetes,terraform,python,ansible,docker,linux,prometheus,grafana,aws,gcp&theme=dark" alt="skill icons" />
+
+</div>
+
+---
+
+## What I build
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Architecture
+**Zero-Trust perimeter for FinTech workloads**
+
+- Edge → WireGuard / Cloudflare Tunnel  
+- K3s + GitOps (declarative, auditable)  
+- Cilium network policy & identity  
+- Vault for secrets · least privilege by default  
+- Observability that proves control, not just uptime  
+
+*Systems that pass security review without freezing the roadmap.*
+
+</td>
+<td width="50%" valign="top">
+
+### Products
+| | |
+|:--|:--|
+| **[152Guard / AEGIS](https://152guard.space)** | AI Data Security Gateway — PII redaction, policy, audit before model egress |
+| **[FTOPS](https://ftops.space)** | Infra control plane — MikroTik, private VPN mesh, corporate AI with change audit |
+| **[AutoHarden](https://github.com/ranas-mukminov/AutoHarden-Toolkit)** | CIS-oriented server hardening automation |
+| **[Secure K3s Starter](https://github.com/ranas-mukminov/Secure-K3s-GitOps-Template)** | Production-ready K3s + GitOps template |
+
+Brand: **[Run_as_daemon](https://run-as-daemon.dev)** · HQ: **[run-as-daemon.pro](https://run-as-daemon.pro)**
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### Open Source
+Pinned tooling you can clone today:
+
+- [**Cloud-IAM-Optimizer**](https://github.com/ranas-mukminov/Cloud-IAM-Optimizer) — AWS/GCP IAM least-privilege auditor  
+- [**Kube-Simple-Audit**](https://github.com/ranas-mukminov/Kube-Simple-Audit) — 5-second K8s sanity check (`kubectl` + `jq`)  
+- [**k8s-fintech-baseline**](https://github.com/ranas-mukminov/k8s-fintech-baseline) — Kyverno PSS, NetworkPolicy, RBAC patterns for FinTech  
+- [**ssh-harden**](https://github.com/ranas-mukminov/ssh-harden) — minimal CIS-oriented `sshd_config` helper  
+- [**152fz-compliance-as-code**](https://github.com/ranas-mukminov/152fz-compliance-as-code) — 152-FZ oriented as-code practices  
+
+</td>
+<td width="50%" valign="top">
+
+### Services
+**Engagements that ship architecture, not slide decks**
+
+| SKU | Outcome |
+|:--|:--|
+| **15-min Architecture Review** | Scope risk, stack fit, next concrete step |
+| **Zero-Trust K3s Sprint** | Hardened cluster + GitOps baseline |
+| **152Guard / AI Gateway** | In-jurisdiction AI path with redaction & audit |
+| **FTOPS Mesh** | Private site-to-site VPN + change control |
+| **Hardening & baselines** | AutoHarden + FinTech K8s policy pack |
+
+Prefer Telegram for speed · LinkedIn for intros.
+
+</td>
+</tr>
+</table>
+
+---
+
+## Reference topology
 
 ```mermaid
-graph TD
-    User([👤 Client / Traffic]) -->|HTTPS/443| CF[☁️ Cloudflare Edge]
-    
-    subgraph "Zero Trust Perimeter"
-        CF -->|Tunnel| WG[🔐 WireGuard Gateway]
-        WG -->|GitOps| K3s[☸️ K3s Cluster]
-    end
-    
-    subgraph "Automated Defense"
-        K3s -->|Scans| IAM[🐍 Cloud-IAM-Optimizer]
-        K3s -->|Monitor| Grafana[📊 Grafana / Kuma]
-    end
-    
-    style CF fill:#f96,stroke:#333,stroke-width:2px
-    style K3s fill:#326ce5,stroke:#333,stroke-width:2px,color:#fff
-    style IAM fill:#ffd343,stroke:#333,stroke-width:2px
+flowchart LR
+  Client([Client / API]) --> Edge[Cloudflare Edge]
+  Edge --> WG[WireGuard Gateway]
+  subgraph ZT["Zero-Trust cluster"]
+    WG --> K3s[K3s + GitOps]
+    K3s --> Cilium[Cilium Policy]
+    K3s --> Vault[Vault Secrets]
+    K3s --> Obs[Grafana / Audit]
+  end
+  K3s -.-> AI[152Guard / AI Gateway]
 ```
 
------
+Compact model: **edge trust → encrypted ingress → identity-aware mesh → secrets & evidence.**
 
-## 🚀 Core Products (Open Source)
+---
 
-| Product | Status | Description |
-| :--- | :--- | :--- |
-| **[Cloud-IAM-Optimizer](https://github.com/ranas-mukminov/Cloud-IAM-Optimizer)** | 🟢 **Stable** | **Identity Security.** Automated audit tool for AWS IAM. Finds dormant admins & MFA gaps. |
-| **[Kube-Simple-Audit](https://github.com/ranas-mukminov/Kube-Simple-Audit)** | 🟢 **New** | **K8s Security.** Lightweight Bash script to find privileged pods & root containers in 5 seconds. |
-| **[Secure-K3s-Template](https://github.com/ranas-mukminov/Secure-K3s-GitOps-Template)** | 🟡 **Beta** | **Infrastructure.** Production-ready K3s cluster template with GitOps & Cloudflare Tunnel. |
------
+<div align="center">
 
-## 💻 Tech Stack & Tools
+## Book a 15-min Architecture Review
 
-  * **Defense:** WireGuard, Cloudflare Tunnels, Trivy, Falco
-  * **Orchestration:** Kubernetes (K3s), Helm, Docker
-  * **Code:** Python (Boto3, Pydantic), Terraform, Ansible
-  * **CI/CD:** GitHub Actions (True GitOps workflows)
+**FinTech · High-load · Regulated data · Sovereign AI path**
 
------
+<br/>
 
-### 📬 Need an Audit?
+[![Book via Telegram](https://img.shields.io/badge/Book_15--min_Review-via_Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/en_run_as_daemon_dev)
+[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ranas-mukminov/)
+[![Open HQ](https://img.shields.io/badge/Open_run--as--daemon.pro-111827?style=for-the-badge)](https://run-as-daemon.pro)
 
-If you want to secure your infrastructure "by design" and move from manual ops to automated defense:
+<br/>
 
-👉 **[Book a 15-min Architecture Review](https://run-as-daemon.dev/en/services/express-audit-hardening.html)**
+<sub>
+<a href="https://run-as-daemon.dev">run-as-daemon.dev</a> ·
+<a href="https://run-as-daemon.pro">.pro</a> ·
+<a href="https://ftops.space">ftops.space</a> ·
+<a href="https://152guard.space">152guard.space</a> ·
+<a href="https://run-as-daemon.ru">.ru</a>
+</sub>
+
+</div>
+
+---
+
+<details>
+<summary><strong>Activity</strong> (optional widgets)</summary>
+<br/>
+<div align="center">
+
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=ranas-mukminov&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=00E5A8&icon_color=00E5A8&text_color=C9D1D9&count_private=true" alt="GitHub stats" />
+<img height="160" src="https://github-readme-streak-stats.herokuapp.com/?user=ranas-mukminov&theme=dark&hide_border=true&background=0D1117&ring=00E5A8&fire=00E5A8&currStreakLabel=00E5A8" alt="GitHub streak" />
+
+</div>
+</details>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=ranas-mukminov&style=flat-square&color=00E5A8" alt="profile views" />
+</p>
