@@ -87,13 +87,11 @@ Pinned tooling you can clone today:
 
 Engagements that ship architecture, not slide decks.
 
-| SKU | Outcome |
-|:----|:--------|
-| **15-min Architecture Review** | Scope risk, stack fit, next concrete step |
-| **Zero-Trust K3s Sprint** | Hardened cluster + GitOps baseline |
-| **152Guard / AI Gateway** | In-jurisdiction AI path with redaction & audit |
-| **FTOPS Mesh** | Private site-to-site VPN + change control |
-| **Hardening & baselines** | AutoHarden + FinTech K8s policy pack |
+- **15-min Architecture Review** — Scope risk, stack fit, next concrete step
+- **Zero-Trust K3s Sprint** — Hardened cluster + GitOps baseline
+- **152Guard / AI Gateway** — In-jurisdiction AI path with redaction & audit
+- **FTOPS Mesh** — Private site-to-site VPN + change control
+- **Hardening & baselines** — AutoHarden + FinTech K8s policy pack
 
 Prefer Telegram for speed · LinkedIn for intros.
 
@@ -101,33 +99,18 @@ Prefer Telegram for speed · LinkedIn for intros.
 
 ## Reference topology
 
-```text
-Client / API
-    │
-    ▼
-Cloudflare Edge
-    │
-    ▼
-WireGuard Gateway
-    │
-    ▼
-┌─────────────────────────────┐
-│  Zero-Trust cluster         │
-│  K3s + GitOps               │
-│    ├─ Cilium Policy         │
-│    ├─ Vault Secrets         │
-│    └─ Grafana / Audit       │
-└──────────────┬──────────────┘
-               │
-               ▼
-        152Guard / AI Gateway
-```
+Vertical flow (reads cleanly on mobile):
 
-<div align="center">
+1. **Client / API**
+2. ↓ **Cloudflare Edge**
+3. ↓ **WireGuard Gateway**
+4. ↓ **Zero-Trust cluster** (K3s + GitOps)
+   - Cilium Policy
+   - Vault Secrets
+   - Grafana / Audit
+5. ↓ **152Guard / AI Gateway**
 
 **Compact model:** edge trust → encrypted ingress → identity-aware mesh → secrets & evidence
-
-</div>
 
 ---
 
