@@ -9,14 +9,15 @@ K3s · GitOps · Zero-Trust · Cilium · Vault · WireGuard
 <br/>
 
 [![Website](https://img.shields.io/badge/run--as--daemon.dev-0A0A0A?style=for-the-badge&logo=googlechrome&logoColor=00E5A8)](https://run-as-daemon.dev)
-[![HQ](https://img.shields.io/badge/run--as--daemon.pro-111827?style=for-the-badge&logo=vercel&logoColor=white)](https://run-as-daemon.pro)
-[![FTOPS](https://img.shields.io/badge/ftops.space-1E3A5F?style=for-the-badge&logo=wireguard&logoColor=88171A)](https://ftops.space)
-[![152Guard](https://img.shields.io/badge/152guard.space-B96F4C?style=for-the-badge&logo=shield&logoColor=white)](https://152guard.space)
+[![HQ](https://img.shields.io/badge/run--as--daemon.pro-0A0A0A?style=for-the-badge&logo=vercel&logoColor=00E5A8)](https://run-as-daemon.pro)
+[![FTOPS](https://img.shields.io/badge/ftops.space-0A0A0A?style=for-the-badge&logo=wireguard&logoColor=00E5A8)](https://ftops.space)
+[![152Guard](https://img.shields.io/badge/152guard.space-0A0A0A?style=for-the-badge&logo=shield&logoColor=00E5A8)](https://152guard.space)
 
-[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/en_run_as_daemon_dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ranas-mukminov/)
-[![X](https://img.shields.io/badge/X-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/mukminov_ranas)
-[![RU](https://img.shields.io/badge/RU_site-run--as--daemon.ru-red?style=flat-square)](https://run-as-daemon.ru)
+<br/>
+
+[![Telegram](https://img.shields.io/badge/Telegram-0A0A0A?style=flat-square&logo=telegram&logoColor=26A5E4)](https://t.me/en_run_as_daemon_dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A0A0A?style=flat-square&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/ranas-mukminov/)
+[![X](https://img.shields.io/badge/X-0A0A0A?style=flat-square&logo=x&logoColor=white)](https://x.com/mukminov_ranas)
 
 </div>
 
@@ -37,64 +38,57 @@ K3s · GitOps · Zero-Trust · Cilium · Vault · WireGuard
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
 ![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white)
 
+<br/>
+
 <img src="https://skillicons.dev/icons?i=kubernetes,terraform,python,ansible,docker,linux,prometheus,grafana,aws,gcp&theme=dark" alt="skill icons" />
 
 </div>
 
 ---
 
-## What I build
+## Architecture
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### Architecture
 **Zero-Trust perimeter for FinTech workloads**
 
-- Edge → WireGuard / Cloudflare Tunnel  
-- K3s + GitOps (declarative, auditable)  
-- Cilium network policy & identity  
-- Vault for secrets · least privilege by default  
-- Observability that proves control, not just uptime  
+- Edge → WireGuard / Cloudflare Tunnel
+- K3s + GitOps (declarative, auditable)
+- Cilium network policy & identity
+- Vault for secrets · least privilege by default
+- Observability that proves control, not just uptime
 
 *Systems that pass security review without freezing the roadmap.*
 
-</td>
-<td width="50%" valign="top">
+---
 
-### Products
-| | |
-|:--|:--|
-| **[152Guard / AEGIS](https://152guard.space)** | AI Data Security Gateway — PII redaction, policy, audit before model egress |
-| **[FTOPS](https://ftops.space)** | Infra control plane — MikroTik, private VPN mesh, corporate AI with change audit |
-| **[AutoHarden](https://github.com/ranas-mukminov/AutoHarden-Toolkit)** | CIS-oriented server hardening automation |
-| **[Secure K3s Starter](https://github.com/ranas-mukminov/Secure-K3s-GitOps-Template)** | Production-ready K3s + GitOps template |
+## Products
+
+- **[152Guard / AEGIS](https://152guard.space)** — AI Data Security Gateway: PII redaction, policy, and audit before model egress
+- **[FTOPS](https://ftops.space)** — Infra control plane: MikroTik, private VPN mesh, corporate AI with change audit
+- **[AutoHarden](https://github.com/ranas-mukminov/AutoHarden-Toolkit)** — CIS-oriented server hardening automation
+- **[Secure K3s Starter](https://github.com/ranas-mukminov/Secure-K3s-GitOps-Template)** — Production-ready K3s + GitOps template
 
 Brand: **[Run_as_daemon](https://run-as-daemon.dev)** · HQ: **[run-as-daemon.pro](https://run-as-daemon.pro)**
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+---
 
-### Open Source
+## Open Source
+
 Pinned tooling you can clone today:
 
-- [**Cloud-IAM-Optimizer**](https://github.com/ranas-mukminov/Cloud-IAM-Optimizer) — AWS/GCP IAM least-privilege auditor  
-- [**Kube-Simple-Audit**](https://github.com/ranas-mukminov/Kube-Simple-Audit) — 5-second K8s sanity check (`kubectl` + `jq`)  
-- [**k8s-fintech-baseline**](https://github.com/ranas-mukminov/k8s-fintech-baseline) — Kyverno PSS, NetworkPolicy, RBAC patterns for FinTech  
-- [**ssh-harden**](https://github.com/ranas-mukminov/ssh-harden) — minimal CIS-oriented `sshd_config` helper  
-- [**152fz-compliance-as-code**](https://github.com/ranas-mukminov/152fz-compliance-as-code) — 152-FZ oriented as-code practices  
+- [**Cloud-IAM-Optimizer**](https://github.com/ranas-mukminov/Cloud-IAM-Optimizer) — AWS/GCP IAM least-privilege auditor
+- [**Kube-Simple-Audit**](https://github.com/ranas-mukminov/Kube-Simple-Audit) — 5-second K8s sanity check (`kubectl` + `jq`)
+- [**k8s-fintech-baseline**](https://github.com/ranas-mukminov/k8s-fintech-baseline) — Kyverno PSS, NetworkPolicy, RBAC patterns for FinTech
+- [**ssh-harden**](https://github.com/ranas-mukminov/ssh-harden) — minimal CIS-oriented `sshd_config` helper
+- [**152fz-compliance-as-code**](https://github.com/ranas-mukminov/152fz-compliance-as-code) — 152-FZ oriented as-code practices
 
-</td>
-<td width="50%" valign="top">
+---
 
-### Services
-**Engagements that ship architecture, not slide decks**
+## Services
+
+Engagements that ship architecture, not slide decks.
 
 | SKU | Outcome |
-|:--|:--|
+|:----|:--------|
 | **15-min Architecture Review** | Scope risk, stack fit, next concrete step |
 | **Zero-Trust K3s Sprint** | Hardened cluster + GitOps baseline |
 | **152Guard / AI Gateway** | In-jurisdiction AI path with redaction & audit |
@@ -103,28 +97,37 @@ Pinned tooling you can clone today:
 
 Prefer Telegram for speed · LinkedIn for intros.
 
-</td>
-</tr>
-</table>
-
 ---
 
 ## Reference topology
 
-```mermaid
-flowchart LR
-  Client([Client / API]) --> Edge[Cloudflare Edge]
-  Edge --> WG[WireGuard Gateway]
-  subgraph ZT["Zero-Trust cluster"]
-    WG --> K3s[K3s + GitOps]
-    K3s --> Cilium[Cilium Policy]
-    K3s --> Vault[Vault Secrets]
-    K3s --> Obs[Grafana / Audit]
-  end
-  K3s -.-> AI[152Guard / AI Gateway]
+```text
+Client / API
+    │
+    ▼
+Cloudflare Edge
+    │
+    ▼
+WireGuard Gateway
+    │
+    ▼
+┌─────────────────────────────┐
+│  Zero-Trust cluster         │
+│  K3s + GitOps               │
+│    ├─ Cilium Policy         │
+│    ├─ Vault Secrets         │
+│    └─ Grafana / Audit       │
+└──────────────┬──────────────┘
+               │
+               ▼
+        152Guard / AI Gateway
 ```
 
-Compact model: **edge trust → encrypted ingress → identity-aware mesh → secrets & evidence.**
+<div align="center">
+
+**Compact model:** edge trust → encrypted ingress → identity-aware mesh → secrets & evidence
+
+</div>
 
 ---
 
@@ -136,18 +139,17 @@ Compact model: **edge trust → encrypted ingress → identity-aware mesh → se
 
 <br/>
 
-[![Book via Telegram](https://img.shields.io/badge/Book_15--min_Review-via_Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/en_run_as_daemon_dev)
-[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ranas-mukminov/)
-[![Open HQ](https://img.shields.io/badge/Open_run--as--daemon.pro-111827?style=for-the-badge)](https://run-as-daemon.pro)
+[![Book via Telegram](https://img.shields.io/badge/Book_15--min_Review-Telegram-0A0A0A?style=for-the-badge&logo=telegram&logoColor=26A5E4)](https://t.me/en_run_as_daemon_dev)
+[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0A0A0A?style=for-the-badge&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/ranas-mukminov/)
+[![Open HQ](https://img.shields.io/badge/Open_run--as--daemon.pro-0A0A0A?style=for-the-badge&logo=vercel&logoColor=00E5A8)](https://run-as-daemon.pro)
 
 <br/>
 
 <sub>
 <a href="https://run-as-daemon.dev">run-as-daemon.dev</a> ·
-<a href="https://run-as-daemon.pro">.pro</a> ·
+<a href="https://run-as-daemon.pro">run-as-daemon.pro</a> ·
 <a href="https://ftops.space">ftops.space</a> ·
-<a href="https://152guard.space">152guard.space</a> ·
-<a href="https://run-as-daemon.ru">.ru</a>
+<a href="https://152guard.space">152guard.space</a>
 </sub>
 
 </div>
