@@ -71,6 +71,20 @@ Brand: **[Run_as_daemon](https://run-as-daemon.dev)** · HQ: **[run-as-daemon.pr
 
 ---
 
+## Case (selected)
+
+**Role:** Founder / Security Architect — Ranas Security Stack  
+**Stack:** bare-metal → K3s · Cilium / eBPF · WireGuard / Cloudflare Tunnel · GitOps · Vault  
+**Outcome:** shipped Zero-Trust perimeter patterns for FinTech-style workloads (no public kube-api/SSH), plus sovereign AI egress controls (PII redaction before model calls).
+
+- Court win (founder software dispute) — 16 Dec 2025 — origin story for Femida Tech formal-logic approach
+- Grant: Фонд содействия инновациям «Старт-1» (заявка С1-633348) — institutional backing for LegalTech/AI path
+- Open starters: [Secure K3s GitOps](https://github.com/ranas-mukminov/Secure-K3s-GitOps-Template) · [AutoHarden](https://github.com/ranas-mukminov/AutoHarden-Toolkit)
+
+*No vanity SLAs here — metrics and measurement methods available on request.*
+
+---
+
 ## Open Source
 
 Pinned tooling you can clone today:
