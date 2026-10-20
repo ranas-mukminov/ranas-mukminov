@@ -27,20 +27,32 @@ K3s · GitOps · Zero-Trust · Cilium · Vault · WireGuard
 
 ### Stack
 
+**Production (own hybrid K3s cluster, 21 nodes):**
+
 ![K3s](https://img.shields.io/badge/K3s-FFC61C?style=flat-square&logo=kubernetes&logoColor=black)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white)
+![GitOps](https://img.shields.io/badge/GitOps-3D7EED?style=flat-square&logo=git&logoColor=white)
 ![Cilium](https://img.shields.io/badge/Cilium-F8C519?style=flat-square&logo=cilium&logoColor=black)
 ![Vault](https://img.shields.io/badge/Vault-000000?style=flat-square&logo=vault&logoColor=yellow)
-![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat-square&logo=wireguard&logoColor=white)
-![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![GitOps](https://img.shields.io/badge/GitOps-3D7EED?style=flat-square&logo=git&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
-![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white)
+![cert-manager](https://img.shields.io/badge/cert--manager-326CE5?style=flat-square&logo=letsencrypt&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![Loki](https://img.shields.io/badge/Loki-F46800?style=flat-square&logo=grafana&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL_/_CloudNativePG-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![WireGuard](https://img.shields.io/badge/WireGuard_/_AmneziaWG-88171A?style=flat-square&logo=wireguard&logoColor=white)
+![Zabbix](https://img.shields.io/badge/Zabbix-D40000?style=flat-square&logo=zabbix&logoColor=white)
+
+**Learning / introducing on my own cluster:**
+
+![Ansible](https://img.shields.io/badge/Ansible-learning-EE0000?style=flat-square&logo=ansible&logoColor=white)
+![OpenTofu](https://img.shields.io/badge/OpenTofu-learning-FFDA18?style=flat-square&logo=opentofu&logoColor=black)
+
+<sub>Ansible: control node + git inventory for ~20 hosts, read-only playbooks so far. OpenTofu: existing Kubernetes resources imported, plan shows no changes.</sub>
 
 <br/>
 
-<img src="https://skillicons.dev/icons?i=kubernetes,terraform,python,ansible,docker,linux,prometheus,grafana,aws,gcp&theme=dark" alt="skill icons" />
+<img src="https://skillicons.dev/icons?i=kubernetes,linux,prometheus,grafana,postgres,redis,python,docker&theme=dark" alt="skill icons" />
 
 </div>
 
@@ -50,7 +62,7 @@ K3s · GitOps · Zero-Trust · Cilium · Vault · WireGuard
 
 **Zero-Trust perimeter for FinTech workloads**
 
-- Edge → WireGuard / Cloudflare Tunnel
+- Edge → WireGuard / AmneziaWG mesh between sites
 - K3s + GitOps (declarative, auditable)
 - Cilium network policy & identity
 - Vault for secrets · least privilege by default
@@ -74,7 +86,7 @@ Brand: **[Run_as_daemon](https://run-as-daemon.dev)** · HQ: **[run-as-daemon.pr
 ## Case (selected)
 
 **Role:** Founder / Security Architect — Ranas Security Stack  
-**Stack:** bare-metal → K3s · Cilium / eBPF · WireGuard / Cloudflare Tunnel · GitOps · Vault  
+**Stack:** bare-metal + VPS → K3s · Cilium · WireGuard / AmneziaWG · GitOps · Vault  
 **Outcome:** shipped Zero-Trust perimeter patterns for FinTech-style workloads (no public kube-api/SSH), plus sovereign AI egress controls (PII redaction before model calls).
 
 - Court win (founder software dispute) — 16 Dec 2025 — origin story for Femida Tech formal-logic approach
@@ -89,7 +101,6 @@ Brand: **[Run_as_daemon](https://run-as-daemon.dev)** · HQ: **[run-as-daemon.pr
 
 Pinned tooling you can clone today:
 
-- [**Cloud-IAM-Optimizer**](https://github.com/ranas-mukminov/Cloud-IAM-Optimizer) — AWS/GCP IAM least-privilege auditor
 - [**Kube-Simple-Audit**](https://github.com/ranas-mukminov/Kube-Simple-Audit) — 5-second K8s sanity check (`kubectl` + `jq`)
 - [**k8s-fintech-baseline**](https://github.com/ranas-mukminov/k8s-fintech-baseline) — Kyverno PSS, NetworkPolicy, RBAC patterns for FinTech
 - [**ssh-harden**](https://github.com/ranas-mukminov/ssh-harden) — minimal CIS-oriented `sshd_config` helper
@@ -116,8 +127,8 @@ Prefer Telegram for speed · LinkedIn for intros.
 Vertical flow (reads cleanly on mobile):
 
 1. **Client / API**
-2. ↓ **Cloudflare Edge**
-3. ↓ **WireGuard Gateway**
+2. ↓ **Edge**
+3. ↓ **WireGuard / AmneziaWG Gateway**
 4. ↓ **Zero-Trust cluster** (K3s + GitOps)
    - Cilium Policy
    - Vault Secrets
