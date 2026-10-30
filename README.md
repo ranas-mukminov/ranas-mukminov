@@ -1,180 +1,67 @@
 <div align="center">
 
-# Run_as_daemon
-### Security Architect · DevSecOps · FinTech Zero-Trust
+# Ranas Mukminov · Run_as_daemon
 
-**I design infrastructure that secures itself — without slowing your delivery.**  
-K3s · GitOps · Zero-Trust · Cilium · Vault · WireGuard
+**Security engineering · DevSecOps · Linux & Kubernetes hardening**
 
-<br/>
+Building and reviewing practical security tooling for cloud-native infrastructure.
+My focus is on reproducible findings, safer defaults, and actionable remediation.
 
-[![Website](https://img.shields.io/badge/run--as--daemon.dev-0A0A0A?style=for-the-badge&logo=googlechrome&logoColor=00E5A8)](https://run-as-daemon.dev)
-[![HQ](https://img.shields.io/badge/run--as--daemon.pro-0A0A0A?style=for-the-badge&logo=vercel&logoColor=00E5A8)](https://run-as-daemon.pro)
-[![FTOPS](https://img.shields.io/badge/ftops.space-0A0A0A?style=for-the-badge&logo=wireguard&logoColor=00E5A8)](https://ftops.space)
-[![152Guard](https://img.shields.io/badge/152guard.space-0A0A0A?style=for-the-badge&logo=shield&logoColor=00E5A8)](https://152guard.space)
-
-<br/>
-
-[![Telegram](https://img.shields.io/badge/Telegram-0A0A0A?style=flat-square&logo=telegram&logoColor=26A5E4)](https://t.me/en_run_as_daemon_dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A0A0A?style=flat-square&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/ranas-mukminov/)
-[![X](https://img.shields.io/badge/X-0A0A0A?style=flat-square&logo=x&logoColor=white)](https://x.com/mukminov_ranas)
+[Website](https://run-as-daemon.dev) · [Projects](https://github.com/ranas-mukminov?tab=repositories) · [LinkedIn](https://www.linkedin.com/in/ranas-mukminov/) · [Telegram](https://t.me/en_run_as_daemon_dev)
 
 </div>
 
 ---
 
-<div align="center">
+## Technical focus
 
-### Stack
+- **Infrastructure security:** Linux hardening, SSH, network segmentation, IAM, secrets management, secure backups.
+- **Cloud-native security:** Kubernetes / K3s, RBAC, workload security contexts, policy-as-code, GitOps, CI security gates.
+- **Detection & response:** telemetry, incident timelines, audit evidence, remediation and recovery exercises.
+- **Responsible research:** scoped, documented and authorized assessments; controlled validation and reporting.
 
-**Production (own hybrid K3s cluster, 21 nodes):**
+My infrastructure laboratory includes a multi-node K3s environment spanning VPS and other Linux hosts. Detailed production/client configurations are intentionally not public; repository examples use sample data.
 
-![K3s](https://img.shields.io/badge/K3s-FFC61C?style=flat-square&logo=kubernetes&logoColor=black)
-![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white)
-![GitOps](https://img.shields.io/badge/GitOps-3D7EED?style=flat-square&logo=git&logoColor=white)
-![Cilium](https://img.shields.io/badge/Cilium-F8C519?style=flat-square&logo=cilium&logoColor=black)
-![Vault](https://img.shields.io/badge/Vault-000000?style=flat-square&logo=vault&logoColor=yellow)
-![cert-manager](https://img.shields.io/badge/cert--manager-326CE5?style=flat-square&logo=letsencrypt&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
-![Loki](https://img.shields.io/badge/Loki-F46800?style=flat-square&logo=grafana&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL_/_CloudNativePG-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![WireGuard](https://img.shields.io/badge/WireGuard_/_AmneziaWG-88171A?style=flat-square&logo=wireguard&logoColor=white)
-![Zabbix](https://img.shields.io/badge/Zabbix-D40000?style=flat-square&logo=zabbix&logoColor=white)
+## Selected open-source work
 
-**Learning / introducing on my own cluster:**
+| Project | What you can inspect |
+| --- | --- |
+| [Kube-Simple-Audit](https://github.com/ranas-mukminov/Kube-Simple-Audit) | Small Bash-based Kubernetes configuration check for privileged workloads, root execution settings, missing resource limits and default-namespace workloads. |
+| [Secure-K3s-GitOps-Template](https://github.com/ranas-mukminov/Secure-K3s-GitOps-Template) | Reference template, infrastructure and Kubernetes manifests for a secure-by-default K3s deployment; review configuration for your environment before use. |
+| [AutoHarden-Toolkit](https://github.com/ranas-mukminov/AutoHarden-Toolkit) | Linux hardening CLI with a dry-run default, opt-in apply mode and sample reports. |
+| [Linux Hardening Blueprint](https://github.com/ranas-mukminov/linux-hardening-blueprint-small-business) | Ansible and CLI implementation of configurable Linux baselines; see repository CI for current validation status. |
+| [Incident Timeline Extractor](https://github.com/ranas-mukminov/incident-timeline-extractor) | Structured incident timeline extraction from operational logs, with tests and documented usage. |
+| [Secure Backups + Drill Lab](https://github.com/ranas-mukminov/secure-backups-drill-lab) | Backup orchestration and recovery drill exercises, including tests and GitHub Actions workflows. |
+| [KubeGuardian Core](https://github.com/ranas-mukminov/KubeGuardian-Core) | Architecture and showcase code for Kubernetes runtime security; not a complete production runtime engine. |
 
-![Ansible](https://img.shields.io/badge/Ansible-learning-EE0000?style=flat-square&logo=ansible&logoColor=white)
-![OpenTofu](https://img.shields.io/badge/OpenTofu-learning-FFDA18?style=flat-square&logo=opentofu&logoColor=black)
+## Contributions beyond my repositories
 
-<sub>Ansible: control node + git inventory for ~20 hosts, read-only playbooks so far. OpenTofu: existing Kubernetes resources imported, plan shows no changes.</sub>
+These are public review records, not claims of private certifications or awards:
 
-<br/>
+- **[Powerpipe #1145 — merged](https://github.com/turbot/powerpipe/pull/1145):** prevent an ECharts snapshot failure when a chart instance has been disposed (merged October 27, 2026).
+- **[Kyverno policies #1583 — open](https://github.com/kyverno/policies/pull/1583):** extend Secret-from-environment policy coverage to init and ephemeral containers.
+- **[Kyverno policies #1567 — open](https://github.com/kyverno/policies/pull/1567):** extend image-tag validation to init and ephemeral containers.
 
-<img src="https://skillicons.dev/icons?i=kubernetes,linux,prometheus,grafana,postgres,redis,python,docker&theme=dark" alt="skill icons" />
+Open PRs are work under review, **not merged upstream changes**. The linked discussions and diffs show the exact contributions.
 
-</div>
+## How I approach authorized security testing
 
----
+1. Confirm asset ownership, explicit written authorization, defined source IPs, timing, methods and stop conditions.
+2. Prefer isolated test environments and synthetic data; do not collect or publish customer data.
+3. Reproduce a suspected issue with the **least intrusive** practical evidence.
+4. Report the affected component, impact, evidence, reproduction in the approved scope and remediation.
+5. Verify the fix and preserve an audit trail. Share real engagement details only with the client's consent.
 
-## Architecture
+For confidential engagements I can supply appropriately redacted evidence only when permitted by the relevant agreement. This profile is **not** a claim of privileged cyber-model access or any security certification.
 
-**Zero-Trust perimeter for FinTech workloads**
+## Architecture & services
 
-- Edge → WireGuard / AmneziaWG mesh between sites
-- K3s + GitOps (declarative, auditable)
-- Cilium network policy & identity
-- Vault for secrets · least privilege by default
-- Observability that proves control, not just uptime
+**Core stack:** Rocky Linux · Kubernetes / K3s · Helm · Terraform / OpenTofu · Ansible · Python · Bash · Traefik · WireGuard / AmneziaWG · Prometheus · Grafana · Zabbix.
 
-*Systems that pass security review without freezing the roadmap.*
+I work on infrastructure architecture reviews, hardening baselines, automation, operational monitoring and scoped security reviews. For commercial engagements, use the contact links above to discuss an appropriate statement of work.
 
----
-
-## Products
-
-- **[152Guard / AEGIS](https://152guard.space)** — AI Data Security Gateway: PII redaction, policy, and audit before model egress
-- **[FTOPS](https://ftops.space)** — Infra control plane: MikroTik, private VPN mesh, corporate AI with change audit
-- **[AutoHarden](https://github.com/ranas-mukminov/AutoHarden-Toolkit)** — CIS-oriented server hardening automation
-- **[Secure K3s Starter](https://github.com/ranas-mukminov/Secure-K3s-GitOps-Template)** — Production-ready K3s + GitOps template
-
-Brand: **[Run_as_daemon](https://run-as-daemon.dev)** · HQ: **[run-as-daemon.pro](https://run-as-daemon.pro)**
+**Other projects:** [152Guard](https://152guard.space) · [FTOPS](https://ftops.space) · [Run_as_daemon HQ](https://run-as-daemon.pro)
 
 ---
 
-## Case (selected)
-
-**Role:** Founder / Security Architect — Ranas Security Stack  
-**Stack:** bare-metal + VPS → K3s · Cilium · WireGuard / AmneziaWG · GitOps · Vault  
-**Outcome:** shipped Zero-Trust perimeter patterns for FinTech-style workloads (no public kube-api/SSH), plus sovereign AI egress controls (PII redaction before model calls).
-
-- Court win (founder software dispute) — 16 Dec 2025 — origin story for Femida Tech formal-logic approach
-- Grant: Фонд содействия инновациям «Старт-1» (заявка С1-633348) — institutional backing for LegalTech/AI path
-- Open starters: [Secure K3s GitOps](https://github.com/ranas-mukminov/Secure-K3s-GitOps-Template) · [AutoHarden](https://github.com/ranas-mukminov/AutoHarden-Toolkit)
-
-*No vanity SLAs here — metrics and measurement methods available on request.*
-
----
-
-## Open Source
-
-Pinned tooling you can clone today:
-
-- [**Kube-Simple-Audit**](https://github.com/ranas-mukminov/Kube-Simple-Audit) — 5-second K8s sanity check (`kubectl` + `jq`)
-- [**k8s-fintech-baseline**](https://github.com/ranas-mukminov/k8s-fintech-baseline) — Kyverno PSS, NetworkPolicy, RBAC patterns for FinTech
-- [**ssh-harden**](https://github.com/ranas-mukminov/ssh-harden) — minimal CIS-oriented `sshd_config` helper
-- [**152fz-compliance-as-code**](https://github.com/ranas-mukminov/152fz-compliance-as-code) — 152-FZ oriented as-code practices
-
----
-
-## Services
-
-Engagements that ship architecture, not slide decks.
-
-- **15-min Architecture Review** — Scope risk, stack fit, next concrete step
-- **Zero-Trust K3s Sprint** — Hardened cluster + GitOps baseline
-- **152Guard / AI Gateway** — In-jurisdiction AI path with redaction & audit
-- **FTOPS Mesh** — Private site-to-site VPN + change control
-- **Hardening & baselines** — AutoHarden + FinTech K8s policy pack
-
-Prefer Telegram for speed · LinkedIn for intros.
-
----
-
-## Reference topology
-
-Vertical flow (reads cleanly on mobile):
-
-1. **Client / API**
-2. ↓ **Edge**
-3. ↓ **WireGuard / AmneziaWG Gateway**
-4. ↓ **Zero-Trust cluster** (K3s + GitOps)
-   - Cilium Policy
-   - Vault Secrets
-   - Grafana / Audit
-5. ↓ **152Guard / AI Gateway**
-
-**Compact model:** edge trust → encrypted ingress → identity-aware mesh → secrets & evidence
-
----
-
-<div align="center">
-
-## Book a 15-min Architecture Review
-
-**FinTech · High-load · Regulated data · Sovereign AI path**
-
-<br/>
-
-[![Book via Telegram](https://img.shields.io/badge/Book_15--min_Review-Telegram-0A0A0A?style=for-the-badge&logo=telegram&logoColor=26A5E4)](https://t.me/en_run_as_daemon_dev)
-[![LinkedIn](https://img.shields.io/badge/Connect_on_LinkedIn-0A0A0A?style=for-the-badge&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/ranas-mukminov/)
-[![Open HQ](https://img.shields.io/badge/Open_run--as--daemon.pro-0A0A0A?style=for-the-badge&logo=vercel&logoColor=00E5A8)](https://run-as-daemon.pro)
-
-<br/>
-
-<sub>
-<a href="https://run-as-daemon.dev">run-as-daemon.dev</a> ·
-<a href="https://run-as-daemon.pro">run-as-daemon.pro</a> ·
-<a href="https://ftops.space">ftops.space</a> ·
-<a href="https://152guard.space">152guard.space</a>
-</sub>
-
-</div>
-
----
-
-<details>
-<summary><strong>Activity</strong> (optional widgets)</summary>
-<br/>
-<div align="center">
-
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=ranas-mukminov&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=00E5A8&icon_color=00E5A8&text_color=C9D1D9&count_private=true" alt="GitHub stats" />
-<img height="160" src="https://github-readme-streak-stats.herokuapp.com/?user=ranas-mukminov&theme=dark&hide_border=true&background=0D1117&ring=00E5A8&fire=00E5A8&currStreakLabel=00E5A8" alt="GitHub streak" />
-
-</div>
-</details>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=ranas-mukminov&style=flat-square&color=00E5A8" alt="profile views" />
-</p>
+<sub>Some repositories are reference implementations or prototypes. Read each project's documented status and limitations before deployment. No production credentials, customer targets or confidential engagement materials are published here.</sub>
